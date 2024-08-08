@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavinraaj S Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, It's Me</h1>
+            <h2>Kavinraaj S</h2>
+            <h3>And I'm a <span>Software Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Possimus nulla sed saepe rerum, animi expedita.</p>
+            <div class="social-icons">
+                <a href="https://github.com/yourgithubprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="kavin.jpg" alt="Kavinraaj S">
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm Kavinraaj S, a software developer passionate about creating innovative solutions and enhancing user experiences.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>Skills</h1>
+            <p>Proficient in various programming languages and technologies...</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <p>Here are some of my recent projects...</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>You can reach me via email at kavinraaj@example.com.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kavinraaj S. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
